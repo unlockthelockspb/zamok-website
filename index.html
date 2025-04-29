@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЗамОК — Вскрытие замков</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/565/565547.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <header class="bg-red-600 text-white py-4 shadow">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">ЗамОК</h1>
+      <nav class="space-x-4">
+        <a href="https://wa.me/79991234567" class="hover:underline">WhatsApp</a>
+        <a href="https://t.me/your_company_bot" class="hover:underline">Telegram</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-blue-100 py-10 text-center px-4">
+    <div class="container mx-auto">
+      <img src="zamok_workers.png" alt="мастера взломщики" class="mx-auto w-72 rounded shadow mb-6">
+      <h2 class="text-4xl font-bold">Срочное вскрытие замков</h2>
+      <p class="text-lg mt-2">Работаем 24/7 по Москве и области. Быстро, без повреждений, с гарантией.</p>
+      <a href="#contact" class="mt-6 inline-block bg-red-600 text-white px-6 py-2 rounded shadow hover:bg-red-700">Вызвать мастера</a>
+    </div>
+  </section>
+
+  <section class="bg-white py-10">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-bold text-center mb-6">Наши услуги</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div><span class="text-4xl">🔐</span><p>Входные двери</p></div>
+        <div><span class="text-4xl">🚗</span><p>Автомобили</p></div>
+        <div><span class="text-4xl">🛠️</span><p>Замена замков</p></div>
+        <div><span class="text-4xl">🏠</span><p>Сейфы и гаражи</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 py-10">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-bold text-center mb-6">Отзывы клиентов</h3>
+      <div class="overflow-hidden relative h-24">
+        <div id="review-slider" class="whitespace-nowrap transition-transform duration-1000 ease-in-out">
+          <div class="inline-block w-full text-center">👍 Очень быстро и профессионально! — Алексей</div>
+          <div class="inline-block w-full text-center">🔐 Приехали через 15 минут, спасибо! — Мария</div>
+          <div class="inline-block w-full text-center">✅ Без повреждений вскрыли дверь! — Игорь</div>
+          <div class="inline-block w-full text-center">👏 Лучший сервис! — Светлана</div>
+          <div class="inline-block w-full text-center">👌 Рекомендую всем — Николай</div>
+          <div class="inline-block w-full text-center">🕒 Приехали точно по времени — Ольга</div>
+          <div class="inline-block w-full text-center">💪 Надёжно и без лишних слов — Артём</div>
+          <div class="inline-block w-full text-center">📞 Быстрая связь и отличный сервис — Татьяна</div>
+          <div class="inline-block w-full text-center">🔥 Впечатлена скоростью — Юлия</div>
+          <div class="inline-block w-full text-center">🙌 Всё открыли без шума — Сергей</div>
+          <div class="inline-block w-full text-center">😊 Улыбчивые мастера, молодцы — Василий</div>
+          <div class="inline-block w-full text-center">🔧 Быстро и без повреждений — Дмитрий</div>
+          <div class="inline-block w-full text-center">😎 Профи своего дела — Максим</div>
+          <div class="inline-block w-full text-center">👏 Оперативно и качественно — Алина</div>
+          <div class="inline-block w-full text-center">⭐ 5 звёзд, всё понравилось — Галина</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-10">
+    <div class="container mx-auto px-4 max-w-md">
+      <h3 class="text-xl font-semibold mb-4">Оставьте заявку</h3>
+      <form id="tg-form" class="space-y-4">
+        <input type="text" name="name" placeholder="Ваше имя" required class="w-full border p-2 rounded" />
+        <input type="tel" name="phone" placeholder="Телефон" required class="w-full border p-2 rounded" />
+        <textarea name="message" placeholder="Комментарий" class="w-full border p-2 rounded"></textarea>
+        <input type="text" name="honey" class="hidden" autocomplete="off">
+        <button type="submit" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded">Отправить</button>
+        <p id="form-status" class="text-sm mt-2"></p>
+      </form>
+    </div>
+  </section>
+
+  <a href="#" class="fixed bottom-5 right-5 bg-gray-700 text-white p-3 rounded-full">↑</a>
+
+  <script>
+    let index = 0;
+    const slider = document.getElementById('review-slider');
+    setInterval(() => {
+      index = (index + 1) % 15;
+      slider.style.transform = `translateX(-${index * 100}%)`;
+    }, 5000);
+
+    document.getElementById("tg-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const form = e.target;
+      const honey = form.honey.value;
+      if (honey) return; // Защита от бота
+
+      const data = {
+        name: form.name.value,
+        phone: form.phone.value,
+        message: form.message.value
+      };
+
+      const token = "7902468673:AAFGKK3G1pM-Rz0CFAATNxrCaY41LwChWIM";
+      const chat_id = "894007967";
+      const text = `🚪 Новая заявка:
+👤 Имя: ${data.name}
+📞 Телефон: ${data.phone}
+💬 Комментарий: ${data.message}`;
+
+      fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ chat_id, text })
+      })
+        .then(res => {
+          document.getElementById("form-status").textContent = "✅ Заявка отправлена!";
+          form.reset();
+        })
+        .catch(() => {
+          document.getElementById("form-status").textContent = "❌ Ошибка отправки.";
+        });
+    });
+  </script>
+</body>
+</html>
