@@ -1,15 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ЗамОК — Вскрытие замков в СПБ круглосуточно</title>
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/565/565547.png" type="image/png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ЗамОК — Вскрытие замков в СПБ круглосуточно</title>
+<link href="https://cdn-icons-png.flaticon.com/512/565/565547.png" rel="icon" type="image/png"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
     :root {
       --primary: #E53E3E;
       --primary-dark: #C53030;
@@ -123,621 +124,587 @@
       display: block;
     }
   </style>
-</head>
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}
+</style></head>
 <body>
-  
-  <header class="sticky-nav py-4 shadow-md sticky top-0 z-50">
-    <div class="container mx-auto px-4 flex justify-between items-center">
-      <div class="flex items-center space-x-3">
-        <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="ЗамОК" class="w-10 h-10">
-        <div>
-          <h1 class="text-2xl font-bold text-white">Зам<span class="text-red-500">ОК</span></h1>
-          <p class="text-xs text-gray-300">Вскрытие замков в СПБ</p>
-        </div>
-      </div>
-      
-      <div class="hidden md:flex items-center space-x-8">
-        <a href="#services" class="nav-link text-white hover:text-red-400">Услуги</a>
-        <a href="#advantages" class="nav-link text-white hover:text-red-400">Преимущества</a>
-        <a href="#reviews" class="nav-link text-white hover:text-red-400">Отзывы</a>
-        <a href="#contacts" class="nav-link text-white hover:text-red-400">Контакты</a>
-      </div>
-      
-      <div class="flex items-center space-x-4">
-        <div class="hidden md:block text-right">
-          <p class="text-white font-medium">Круглосуточно</p>
-          <a href="tel:+88005553535" class="text-xl font-bold text-red-400 hover:text-red-300">8 (800) 555-35-35</a>
-        </div>
-        <a href="#callback" class="btn-primary text-white px-6 py-3 rounded-lg font-semibold">
-          <i class="fas fa-phone-alt mr-2"></i>Вызвать мастера
+<!-- Header -->
+<header class="sticky-nav py-4 shadow-md sticky top-0 z-50">
+<div class="container mx-auto px-4 flex justify-between items-center">
+<div class="flex items-center space-x-3">
+<img alt="ЗамОК" class="w-10 h-10" src="https://cdn-icons-png.flaticon.com/512/565/565547.png"/>
+<div>
+<h1 class="text-2xl font-bold text-white">Зам<span class="text-red-500">ОК</span></h1>
+<p class="text-xs text-gray-300">Вскрытие замков в СПБ</p>
+</div>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="nav-link text-white hover:text-red-400" href="#services">Услуги</a>
+<a class="nav-link text-white hover:text-red-400" href="#advantages">Преимущества</a>
+<a class="nav-link text-white hover:text-red-400" href="#reviews">Отзывы</a>
+<a class="nav-link text-white hover:text-red-400" href="#contacts">Контакты</a>
+</div>
+<div class="flex items-center space-x-4">
+<div class="hidden md:block text-right">
+<p class="text-white font-medium">Круглосуточно</p>
+<a class="text-xl font-bold text-red-400 hover:text-red-300" href="tel:+88005553535">8 (800) 555-35-35</a>
+</div>
+<a class="btn-primary text-white px-6 py-3 rounded-lg font-semibold" href="#callback">
+<i class="fas fa-phone-alt mr-2"></i>Вызвать мастера
         </a>
-      </div>
-    </div>
-  </header>
-
-
-  <section class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('locksmith-bg.jpg')">
-    <div class="absolute inset-0 hero-gradient"></div>
-    <div class="container mx-auto px-4 relative z-10">
-      <div class="max-w-2xl">
-        <h1 class="text-4xl md:text-5xl font-bold text-white mb-6" data-aos="fade-right">
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('locksmith-bg.jpg')">
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="container mx-auto px-4 relative z-10">
+<div class="max-w-2xl">
+<h1 class="text-4xl md:text-5xl font-bold text-white mb-6" data-aos="fade-right">
           Аварийное <span class="text-red-400">вскрытие замков</span> в Санкт-Петербурге
         </h1>
-        <p class="text-xl text-gray-200 mb-8" data-aos="fade-right" data-aos-delay="100">
+<p class="text-xl text-gray-200 mb-8" data-aos="fade-right" data-aos-delay="100">
           Быстро, аккуратно и без повреждений. Выезд мастера <span class="font-semibold">за 15-30 минут</span> по всему городу.
         </p>
-        
-        <div class="bg-white rounded-lg p-6 shadow-xl max-w-md" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Оставьте заявку</h3>
-          <form id="callback-form" class="space-y-4">
-            <div>
-              <input type="text" name="name" placeholder="Ваше имя" required 
-                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400">
-            </div>
-            <div>
-              <input type="tel" name="phone" placeholder="Ваш телефон" required 
-                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400">
-            </div>
-            <input type="text" name="honey" class="hidden" autocomplete="off">
-            <button type="submit" class="btn-primary w-full text-white py-3 rounded-lg font-semibold">
-              <i class="fas fa-paper-plane mr-2"></i>Вызвать мастера
+<div class="bg-white rounded-lg p-6 shadow-xl max-w-md" data-aos="fade-up" data-aos-delay="200">
+<h3 class="text-2xl font-bold text-gray-800 mb-4">Оставьте заявку</h3>
+<form class="space-y-4" id="callback-form">
+<div>
+<input class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400" name="name" placeholder="Ваше имя" required="" type="text"/>
+</div>
+<div>
+<input class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400" name="phone" placeholder="Ваш телефон" required="" type="tel"/>
+</div>
+<input autocomplete="off" class="hidden" name="honey" type="text"/>
+<button class="btn-primary w-full text-white py-3 rounded-lg font-semibold" type="submit">
+<i class="fas fa-paper-plane mr-2"></i>Вызвать мастера
             </button>
-            <div id="callback-status" class="form-status"></div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="services" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up">Наши услуги</h2>
-        <div class="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+<div class="form-status" id="callback-status"></div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-16 bg-white" id="services">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up">Наши услуги</h2>
+<div class="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
           Профессиональное вскрытие и ремонт любых типов замков с гарантией качества
         </p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="feature-card bg-gray-50 p-8 rounded-lg shadow" data-aos="fade-up">
-          <div class="text-red-500 text-4xl mb-4">
-            <i class="fas fa-key"></i>
-          </div>
-          <h3 class="text-xl font-bold text-gray-800 mb-3">Вскрытие дверей</h3>
-          <p class="text-gray-600">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="feature-card bg-gray-50 p-8 rounded-lg shadow" data-aos="fade-up">
+<div class="text-red-500 text-4xl mb-4">
+<i class="fas fa-key"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Вскрытие дверей</h3>
+<p class="text-gray-600">
             Аккуратное вскрытие без повреждений входных и межкомнатных дверей. 
             Гарантируем сохранность вашего имущества.
           </p>
-          <div class="mt-4 text-red-500 font-semibold">от 1000 руб.</div>
-        </div>
-        
-        <div class="feature-card bg-gray-50 p-8 rounded-lg shadow" data-aos="fade-up" data-aos-delay="100">
-          <div class="text-red-500 text-4xl mb-4">
-            <i class="fas fa-lock"></i>
-          </div>
-          <h3 class="text-xl font-bold text-gray-800 mb-3">Замена замков</h3>
-          <p class="text-gray-600">
+<div class="mt-4 text-red-500 font-semibold">от 1000 руб.</div>
+</div>
+<div class="feature-card bg-gray-50 p-8 rounded-lg shadow" data-aos="fade-up" data-aos-delay="100">
+<div class="text-red-500 text-4xl mb-4">
+<i class="fas fa-lock"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Замена замков</h3>
+<p class="text-gray-600">
             Установка новых замков любых типов: цилиндровые, сувальдные, электронные. 
             Подбор оптимального решения под ваш бюджет.
           </p>
-          <div class="mt-4 text-red-500 font-semibold">от 1500 руб.</div>
-        </div>
-        
-        <div class="feature-card bg-gray-50 p-8 rounded-lg shadow" data-aos="fade-up" data-aos-delay="200">
-          <div class="text-red-500 text-4xl mb-4">
-            <i class="fas fa-tools"></i>
-          </div>
-          <h3 class="text-xl font-bold text-gray-800 mb-3">Ремонт замков</h3>
-          <p class="text-gray-600">
+<div class="mt-4 text-red-500 font-semibold">от 1500 руб.</div>
+</div>
+<div class="feature-card bg-gray-50 p-8 rounded-lg shadow" data-aos="fade-up" data-aos-delay="200">
+<div class="text-red-500 text-4xl mb-4">
+<i class="fas fa-tools"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Ремонт замков</h3>
+<p class="text-gray-600">
             Устранение любых неисправностей: заедание, заклинивание, провисание. 
             Восстановление работоспособности без замены.
           </p>
-          <div class="mt-4 text-red-500 font-semibold">от 800 руб.</div>
-        </div>
-        
-        <div class="feature-card bg-gray-50 p-8 rounded-lg shadow" data-aos="fade-up">
-          <div class="text-red-500 text-4xl mb-4">
-            <i class="fas fa-car"></i>
-          </div>
-          <h3 class="text-xl font-bold text-gray-800 mb-3">Авто замки</h3>
-          <p class="text-gray-600">
+<div class="mt-4 text-red-500 font-semibold">от 800 руб.</div>
+</div>
+<div class="feature-card bg-gray-50 p-8 rounded-lg shadow" data-aos="fade-up">
+<div class="text-red-500 text-4xl mb-4">
+<i class="fas fa-car"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Авто замки</h3>
+<p class="text-gray-600">
             Вскрытие автомобилей без повреждений. Изготовление дубликатов ключей, 
             ремонт и замена автомобильных замков.
           </p>
-          <div class="mt-4 text-red-500 font-semibold">от 2000 руб.</div>
-        </div>
-        
-        <div class="feature-card bg-gray-50 p-8 rounded-lg shadow" data-aos="fade-up" data-aos-delay="100">
-          <div class="text-red-500 text-4xl mb-4">
-            <i class="fas fa-safe"></i>
-          </div>
-          <h3 class="text-xl font-bold text-gray-800 mb-3">Сейфы и металлические шкафы</h3>
-          <p class="text-gray-600">
+<div class="mt-4 text-red-500 font-semibold">от 2000 руб.</div>
+</div>
+<div class="feature-card bg-gray-50 p-8 rounded-lg shadow" data-aos="fade-up" data-aos-delay="100">
+<div class="text-red-500 text-4xl mb-4">
+<i class="fas fa-safe"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Сейфы и металлические шкафы</h3>
+<p class="text-gray-600">
             Профессиональное вскрытие сейфов и металлических шкафов при утере ключей 
             или комбинации.
           </p>
-          <div class="mt-4 text-red-500 font-semibold">от 2500 руб.</div>
-        </div>
-        
-        <div class="feature-card bg-gray-50 p-8 rounded-lg shadow" data-aos="fade-up" data-aos-delay="200">
-          <div class="text-red-500 text-4xl mb-4">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <h3 class="text-xl font-bold text-gray-800 mb-3">Усиление защиты</h3>
-          <p class="text-gray-600">
+<div class="mt-4 text-red-500 font-semibold">от 2500 руб.</div>
+</div>
+<div class="feature-card bg-gray-50 p-8 rounded-lg shadow" data-aos="fade-up" data-aos-delay="200">
+<div class="text-red-500 text-4xl mb-4">
+<i class="fas fa-shield-alt"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Усиление защиты</h3>
+<p class="text-gray-600">
             Консультации по безопасности, установка дополнительных защитных систем 
             и модернизация существующих.
           </p>
-          <div class="mt-4 text-red-500 font-semibold">от 3000 руб.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="advantages" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up">Почему выбирают нас</h2>
-        <div class="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+<div class="mt-4 text-red-500 font-semibold">от 3000 руб.</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Advantages Section -->
+<section class="py-16 bg-gray-50" id="advantages">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up">Почему выбирают нас</h2>
+<div class="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
           Профессиональный подход и гарантия качества на все виды работ
         </p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white p-8 rounded-lg shadow-md text-center" data-aos="fade-up">
-          <div class="text-red-500 text-5xl mb-6">
-            <i class="fas fa-clock"></i>
-          </div>
-          <h3 class="text-xl font-bold text-gray-800 mb-3">Круглосуточно</h3>
-          <p class="text-gray-600">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-md text-center" data-aos="fade-up">
+<div class="text-red-500 text-5xl mb-6">
+<i class="fas fa-clock"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Круглосуточно</h3>
+<p class="text-gray-600">
             Работаем 24/7 без выходных и праздников. Выезд мастера в течение 15-30 минут.
           </p>
-        </div>
-        
-        <div class="bg-white p-8 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="100">
-          <div class="text-red-500 text-5xl mb-6">
-            <i class="fas fa-user-tie"></i>
-          </div>
-          <h3 class="text-xl font-bold text-gray-800 mb-3">Опытные мастера</h3>
-          <p class="text-gray-600">
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="100">
+<div class="text-red-500 text-5xl mb-6">
+<i class="fas fa-user-tie"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Опытные мастера</h3>
+<p class="text-gray-600">
             Специалисты с опытом работы от 5 лет. Профессиональное оборудование и инструменты.
           </p>
-        </div>
-        
-        <div class="bg-white p-8 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="200">
-          <div class="text-red-500 text-5xl mb-6">
-            <i class="fas fa-shield-alt"></i>
-          </div>
-          <h3 class="text-xl font-bold text-gray-800 mb-3">Без повреждений</h3>
-          <p class="text-gray-600">
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="200">
+<div class="text-red-500 text-5xl mb-6">
+<i class="fas fa-shield-alt"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Без повреждений</h3>
+<p class="text-gray-600">
             Гарантируем аккуратное вскрытие без повреждений двери и дверной коробки.
           </p>
-        </div>
-        
-        <div class="bg-white p-8 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="300">
-          <div class="text-red-500 text-5xl mb-6">
-            <i class="fas fa-medal"></i>
-          </div>
-          <h3 class="text-xl font-bold text-gray-800 mb-3">Гарантия качества</h3>
-          <p class="text-gray-600">
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="300">
+<div class="text-red-500 text-5xl mb-6">
+<i class="fas fa-medal"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-3">Гарантия качества</h3>
+<p class="text-gray-600">
             Предоставляем гарантию до 3 лет на все виды работ и установленные замки.
           </p>
-        </div>
-      </div>
-      
-      <div class="mt-16 bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up">
-        <div class="md:flex">
-          <div class="md:w-1/2 bg-red-500 p-8 md:p-12 flex items-center">
-            <div>
-              <h3 class="text-2xl font-bold text-white mb-4">Как мы работаем</h3>
-              <ol class="space-y-4 text-white">
-                <li class="flex items-start">
-                  <span class="bg-white text-red-500 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">1</span>
-                  <span>Вы оставляете заявку или звоните нам</span>
-                </li>
-                <li class="flex items-start">
-                  <span class="bg-white text-red-500 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">2</span>
-                  <span>Мастер приезжает в течение 15-30 минут</span>
-                </li>
-                <li class="flex items-start">
-                  <span class="bg-white text-red-500 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">3</span>
-                  <span>Бесплатная диагностика и оценка работы</span>
-                </li>
-                <li class="flex items-start">
-                  <span class="bg-white text-red-500 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">4</span>
-                  <span>Выполнение работы с гарантией качества</span>
-                </li>
-              </ol>
-            </div>
-          </div>
-          <div class="md:w-1/2 p-8 md:p-12">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">О компании</h3>
-            <p class="text-gray-600 mb-6">
-              <span class="font-semibold text-red-500">ЗамОК</span> — профессиональная служба по вскрытию и ремонту замков в Санкт-Петербурге. 
+</div>
+</div>
+<div class="mt-16 bg-white rounded-xl shadow-lg overflow-hidden" data-aos="fade-up">
+<div class="md:flex">
+<div class="md:w-1/2 bg-red-500 p-8 md:p-12 flex items-center">
+<div>
+<h3 class="text-2xl font-bold text-white mb-4">Как мы работаем</h3>
+<ol class="space-y-4 text-white">
+<li class="flex items-start">
+<span class="bg-white text-red-500 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">1</span>
+<span>Вы оставляете заявку или звоните нам</span>
+</li>
+<li class="flex items-start">
+<span class="bg-white text-red-500 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">2</span>
+<span>Мастер приезжает в течение 15-30 минут</span>
+</li>
+<li class="flex items-start">
+<span class="bg-white text-red-500 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">3</span>
+<span>Бесплатная диагностика и оценка работы</span>
+</li>
+<li class="flex items-start">
+<span class="bg-white text-red-500 rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">4</span>
+<span>Выполнение работы с гарантией качества</span>
+</li>
+</ol>
+</div>
+</div>
+<div class="md:w-1/2 p-8 md:p-12">
+<h3 class="text-2xl font-bold text-gray-800 mb-4">О компании</h3>
+<p class="text-gray-600 mb-6">
+<span class="font-semibold text-red-500">ЗамОК</span> — профессиональная служба по вскрытию и ремонту замков в Санкт-Петербурге. 
               Мы работаем с 2012 года и помогли уже более 5000 клиентов.
             </p>
-            <p class="text-gray-600 mb-6">
+<p class="text-gray-600 mb-6">
               Наши мастера проходят регулярное обучение и используют только профессиональное 
               оборудование для работы с любыми типами замков.
             </p>
-            <p class="text-gray-600">
+<p class="text-gray-600">
               Мы ценим ваше время и доверие, поэтому гарантируем качественное выполнение 
               работ в кратчайшие сроки.
             </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
- 
-  <section class="py-16 bg-red-600 text-white">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">Попали в сложную ситуацию?</h2>
-      <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-16 bg-red-600 text-white">
+<div class="container mx-auto px-4 text-center">
+<h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">Попали в сложную ситуацию?</h2>
+<p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
         Не пытайтесь вскрыть дверь самостоятельно — это может привести к повреждениям. 
         Доверьте работу профессионалам!
       </p>
-      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-        <a href="tel:+78005553535" class="bg-white text-red-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition" data-aos="fade-up" data-aos-delay="200">
-          <i class="fas fa-phone-alt mr-2"></i>8 (981) 725-58-37
+<div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+<a class="bg-white text-red-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition" data-aos="fade-up" data-aos-delay="200" href="tel:+78005553535">
+<i class="fas fa-phone-alt mr-2"></i>8 (981) 725-58-37
         </a>
-        <a href="#callback" class="bg-gray-900 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-800 transition" data-aos="fade-up" data-aos-delay="300">
-          <i class="fas fa-envelope mr-2"></i>Заказать звонок
+<a class="bg-gray-900 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-800 transition" data-aos="fade-up" data-aos-delay="300" href="#callback">
+<i class="fas fa-envelope mr-2"></i>Заказать звонок
         </a>
-      </div>
-    </div>
-  </section>
-
-  
-  <section id="reviews" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up">Отзывы наших клиентов</h2>
-        <div class="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-16 bg-white" id="reviews">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up">Отзывы наших клиентов</h2>
+<div class="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
+<p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
           Более 1000 довольных клиентов в Санкт-Петербурге
         </p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="testimonial-card p-8 rounded-lg shadow-md" data-aos="fade-up">
-          <div class="flex items-center mb-4">
-            <div class="text-yellow-400 mr-2">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="text-gray-500 text-sm">12.05.2025</div>
-          </div>
-          <p class="text-gray-700 mb-4">
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="testimonial-card p-8 rounded-lg shadow-md" data-aos="fade-up">
+<div class="flex items-center mb-4">
+<div class="text-yellow-400 mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<div class="text-gray-500 text-sm">12.05.2025</div>
+</div>
+<p class="text-gray-700 mb-4">
             "Очень быстро приехал мастер, открыл дверь без повреждений за 10 минут. 
             Вежливый, аккуратный, объяснил в чем была проблема. Рекомендую!"
           </p>
-          <div class="flex items-center">
-            <div class="w-10 h-10 rounded-full bg-gray-300 mr-3 overflow-hidden">
-              <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Ирина">
-            </div>
-            <div>
-              <h4 class="font-bold text-gray-800">Ирина</h4>
-              <p class="text-sm text-gray-500">м. Московская</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-          <div class="flex items-center mb-4">
-            <div class="text-yellow-400 mr-2">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="text-gray-500 text-sm">28.04.2025</div>
-          </div>
-          <p class="text-gray-700 mb-4">
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-gray-300 mr-3 overflow-hidden">
+<img alt="Ирина" src="https://randomuser.me/api/portraits/women/43.jpg"/>
+</div>
+<div>
+<h4 class="font-bold text-gray-800">Ирина</h4>
+<p class="text-sm text-gray-500">м. Московская</p>
+</div>
+</div>
+</div>
+<div class="testimonial-card p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+<div class="flex items-center mb-4">
+<div class="text-yellow-400 mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<div class="text-gray-500 text-sm">28.04.2025</div>
+</div>
+<p class="text-gray-700 mb-4">
             "Забыл ключи в квартире поздно вечером. Позвонил, мастер приехал через 20 минут. 
             Открыл аккуратно, дал советы по замку. Цена соответствовала озвученной по телефону."
           </p>
-          <div class="flex items-center">
-            <div class="w-10 h-10 rounded-full bg-gray-300 mr-3 overflow-hidden">
-              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Алексей">
-            </div>
-            <div>
-              <h4 class="font-bold text-gray-800">Алексей</h4>
-              <p class="text-sm text-gray-500">м. Проспект Просвещения</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
-          <div class="flex items-center mb-4">
-            <div class="text-yellow-400 mr-2">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="text-gray-500 text-sm">15.04.2025</div>
-          </div>
-          <p class="text-gray-700 mb-4">
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-gray-300 mr-3 overflow-hidden">
+<img alt="Алексей" src="https://randomuser.me/api/portraits/men/32.jpg"/>
+</div>
+<div>
+<h4 class="font-bold text-gray-800">Алексей</h4>
+<p class="text-sm text-gray-500">м. Проспект Просвещения</p>
+</div>
+</div>
+</div>
+<div class="testimonial-card p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+<div class="flex items-center mb-4">
+<div class="text-yellow-400 mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+<div class="text-gray-500 text-sm">15.04.2025</div>
+</div>
+<p class="text-gray-700 mb-4">
             "Сломался замок в офисе, срочно нужно было открыть. Ребята оперативно приехали, 
             профессионально вскрыли и сразу предложили варианты замены. Остались очень довольны!"
           </p>
-          <div class="flex items-center">
-            <div class="w-10 h-10 rounded-full bg-gray-300 mr-3 overflow-hidden">
-              <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ольга">
-            </div>
-            <div>
-              <h4 class="font-bold text-gray-800">Ольга</h4>
-              <p class="text-sm text-gray-500">м. Технологический институт</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up">Частые вопросы</h2>
-        <div class="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
-      </div>
-      
-      <div class="max-w-3xl mx-auto space-y-4">
-        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
-          <button class="faq-toggle w-full flex justify-between items-center text-left">
-            <h3 class="text-lg font-semibold text-gray-800">Сколько стоит вскрытие двери?</h3>
-            <i class="fas fa-chevron-down text-red-500 transition-transform"></i>
-          </button>
-          <div class="faq-content mt-3 text-gray-600 hidden">
-            <p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-gray-300 mr-3 overflow-hidden">
+<img alt="Ольга" src="https://randomuser.me/api/portraits/women/65.jpg"/>
+</div>
+<div>
+<h4 class="font-bold text-gray-800">Ольга</h4>
+<p class="text-sm text-gray-500">м. Технологический институт</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up">Частые вопросы</h2>
+<div class="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
+</div>
+<div class="max-w-3xl mx-auto space-y-4">
+<div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+<button class="faq-toggle w-full flex justify-between items-center text-left">
+<h3 class="text-lg font-semibold text-gray-800">Сколько стоит вскрытие двери?</h3>
+<i class="fas fa-chevron-down text-red-500 transition-transform"></i>
+</button>
+<div class="faq-content mt-3 text-gray-600 hidden">
+<p>
               Стоимость вскрытия двери зависит от типа замка и сложности работы. 
               Минимальная цена — от 1000 рублей. Точную стоимость мастер сможет 
               назвать после осмотра замка на месте.
             </p>
-          </div>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-          <button class="faq-toggle w-full flex justify-between items-center text-left">
-            <h3 class="text-lg font-semibold text-gray-800">Вы работаете круглосуточно?</h3>
-            <i class="fas fa-chevron-down text-red-500 transition-transform"></i>
-          </button>
-          <div class="faq-content mt-3 text-gray-600 hidden">
-            <p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+<button class="faq-toggle w-full flex justify-between items-center text-left">
+<h3 class="text-lg font-semibold text-gray-800">Вы работаете круглосуточно?</h3>
+<i class="fas fa-chevron-down text-red-500 transition-transform"></i>
+</button>
+<div class="faq-content mt-3 text-gray-600 hidden">
+<p>
               Да, мы работаем 24 часа в сутки, 7 дней в неделю, включая выходные и праздничные дни. 
               Вы можете вызвать мастера в любое удобное для вас время.
             </p>
-          </div>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
-          <button class="faq-toggle w-full flex justify-between items-center text-left">
-            <h3 class="text-lg font-semibold text-gray-800">Как быстро приедет мастер?</h3>
-            <i class="fas fa-chevron-down text-red-500 transition-transform"></i>
-          </button>
-          <div class="faq-content mt-3 text-gray-600 hidden">
-            <p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+<button class="faq-toggle w-full flex justify-between items-center text-left">
+<h3 class="text-lg font-semibold text-gray-800">Как быстро приедет мастер?</h3>
+<i class="fas fa-chevron-down text-red-500 transition-transform"></i>
+</button>
+<div class="faq-content mt-3 text-gray-600 hidden">
+<p>
               В среднем время прибытия мастера составляет 15-30 минут в пределах Санкт-Петербурга. 
               В отдаленные районы и пригороды время выезда может увеличиться до 40-60 минут.
             </p>
-          </div>
-        </div>
-        
-        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
-          <button class="faq-toggle w-full flex justify-between items-center text-left">
-            <h3 class="text-lg font-semibold text-gray-800">Можно ли открыть дверь без повреждений?</h3>
-            <i class="fas fa-chevron-down text-red-500 transition-transform"></i>
-          </button>
-          <div class="faq-content mt-3 text-gray-600 hidden">
-            <p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+<button class="faq-toggle w-full flex justify-between items-center text-left">
+<h3 class="text-lg font-semibold text-gray-800">Можно ли открыть дверь без повреждений?</h3>
+<i class="fas fa-chevron-down text-red-500 transition-transform"></i>
+</button>
+<div class="faq-content mt-3 text-gray-600 hidden">
+<p>
               В 90% случаев нам удается открыть дверь без повреждений. Однако если замок 
               неисправен или сильно изношен, могут потребоваться более радикальные методы. 
               Мастер всегда предупредит о возможных последствиях перед началом работы.
             </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
- 
-  <section id="contacts" class="py-16 bg-gray-800 text-white">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">Контакты</h2>
-        <div class="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
-        <p class="text-xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 bg-gray-800 text-white" id="contacts">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">Контакты</h2>
+<div class="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
+<p class="text-xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
           Свяжитесь с нами любым удобным способом
         </p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div data-aos="fade-right">
-          <h3 class="text-2xl font-bold mb-6">Контактная информация</h3>
-          
-          <div class="space-y-6">
-            <div class="flex items-start">
-              <div class="text-red-500 text-xl mr-4 mt-1">
-                <i class="fas fa-phone-alt"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-lg mb-1">Телефон</h4>
-                <a href="tel:+78005553535" class="text-gray-300 hover:text-white">8 (800) 555-35-35</a></a>
-                <p class="text-sm text-gray-400">Круглосуточно, без выходных</p>
-              </div>
-            </div>
-            
-            <div class="flex items-start">
-              <div class="text-red-500 text-xl mr-4 mt-1">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-lg mb-1">Email</h4>
-                <a href="mailto:unlockthelock74@gmail.com" class="text-gray-300 hover:text-white">unlockthelock74@gmail.com</a>
-              </div>
-            </div>
-            
-            <div class="flex items-start">
-              <div class="text-red-500 text-xl mr-4 mt-1">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-lg mb-1">Адрес офиса</h4>
-                <p class="text-gray-300">г. Санкт-Петербург, ул. Лиговский проспект, 30</p>
-                <p class="text-sm text-gray-400">По предварительной записи</p>
-              </div>
-            </div>
-            
-            <div class="flex items-start">
-              <div class="text-red-500 text-xl mr-4 mt-1">
-                <i class="fas fa-clock"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-lg mb-1">Режим работы</h4>
-                <p class="text-gray-300">Круглосуточно, без выходных</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div data-aos="fade-left" data-aos-delay="100">
-          <h3 class="text-2xl font-bold mb-6">Остались вопросы?</h3>
-          <form id="contact-form" class="space-y-4">
-            <div>
-              <input type="text" name="name" placeholder="Ваше имя" required 
-                     class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400 text-white">
-            </div>
-            <div>
-              <input type="tel" name="phone" placeholder="Ваш телефон" required 
-                     class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400 text-white">
-            </div>
-            <div>
-              <textarea name="message" placeholder="Ваш вопрос" rows="4"
-                        class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400 text-white"></textarea>
-            </div>
-            <input type="text" name="honey" class="hidden" autocomplete="off">
-            <button type="submit" class="btn-primary w-full text-white py-3 rounded-lg font-semibold">
-              <i class="fas fa-paper-plane mr-2"></i>Отправить сообщение
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div data-aos="fade-right">
+<h3 class="text-2xl font-bold mb-6">Контактная информация</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="text-red-500 text-xl mr-4 mt-1">
+<i class="fas fa-phone-alt"></i>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">Телефон</h4>
+<a class="text-gray-300 hover:text-white" href="tel:+78005553535">8 (800) 555-35-35</a>
+<p class="text-sm text-gray-400">Круглосуточно, без выходных</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="text-red-500 text-xl mr-4 mt-1">
+<i class="fas fa-envelope"></i>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">Email</h4>
+<a class="text-gray-300 hover:text-white" href="mailto:unlockthelock74@gmail.com">unlockthelock74@gmail.com</a>
+</div>
+</div>
+<div class="flex items-start">
+<div class="text-red-500 text-xl mr-4 mt-1">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">Адрес офиса</h4>
+<p class="text-gray-300">г. Санкт-Петербург, ул. Лиговский проспект, 30</p>
+<p class="text-sm text-gray-400">По предварительной записи</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="text-red-500 text-xl mr-4 mt-1">
+<i class="fas fa-clock"></i>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">Режим работы</h4>
+<p class="text-gray-300">Круглосуточно, без выходных</p>
+</div>
+</div>
+</div>
+</div>
+<div data-aos="fade-left" data-aos-delay="100">
+<h3 class="text-2xl font-bold mb-6">Остались вопросы?</h3>
+<form class="space-y-4" id="contact-form">
+<div>
+<input class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400 text-white" name="name" placeholder="Ваше имя" required="" type="text"/>
+</div>
+<div>
+<input class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400 text-white" name="phone" placeholder="Ваш телефон" required="" type="tel"/>
+</div>
+<div>
+<textarea class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-400 text-white" name="message" placeholder="Ваш вопрос" rows="4"></textarea>
+</div>
+<input autocomplete="off" class="hidden" name="honey" type="text"/>
+<button class="btn-primary w-full text-white py-3 rounded-lg font-semibold" type="submit">
+<i class="fas fa-paper-plane mr-2"></i>Отправить сообщение
             </button>
-            <div id="contact-status" class="form-status"></div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
-  <footer class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div>
-          <div class="flex items-center mb-4">
-            <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="ЗамОК" class="w-10 h-10 mr-3">
-            <h3 class="text-xl font-bold">Зам<span class="text-red-500">ОК</span></h3>
-          </div>
-          <p class="text-gray-400 mb-4">
+<div class="form-status" id="contact-status"></div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<div class="flex items-center mb-4">
+<img alt="ЗамОК" class="w-10 h-10 mr-3" src="https://cdn-icons-png.flaticon.com/512/565/565547.png"/>
+<h3 class="text-xl font-bold">Зам<span class="text-red-500">ОК</span></h3>
+</div>
+<p class="text-gray-400 mb-4">
             Профессиональное вскрытие и ремонт замков в Санкт-Петербурге
           </p>
-          <div class="flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-white text-xl">
-              <i class="fab fa-vk"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white text-xl">
-              <i class="fab fa-telegram"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white text-xl">
-              <i class="fab fa-whatsapp"></i>
-            </a>
-          </div>
-        </div>
-        
-        <div>
-          <h4 class="text-lg font-bold mb-4">Услуги</h4>
-          <ul class="space-y-2">
-            <li><a href="#" class="text-gray-400 hover:text-white">Вскрытие дверей</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Замена замков</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Ремонт замков</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Авто замки</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Сейфы и шкафы</a></li>
-          </ul>
-        </div>
-        
-        <div>
-          <h4 class="text-lg font-bold mb-4">Компания</h4>
-          <ul class="space-y-2">
-            <li><a href="#" class="text-gray-400 hover:text-white">О нас</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Отзывы</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Цены</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Контакты</a></li>
-          </ul>
-        </div>
-        
-        <div>
-          <h4 class="text-lg font-bold mb-4">Контакты</h4>
-          <ul class="space-y-2">
-            <li class="flex items-center">
-              <i class="fas fa-phone-alt text-red-500 mr-2"></i>
-              <a href="tel:+78005553535" class="text-gray-400 hover:text-white">8 (800) 555-35-35</a>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-envelope text-red-500 mr-2"></i>
-              <a href="mailto:unlockthelock74@gmail.com" class="text-gray-400 hover:text-white">unlockthelock74@gmail.com</a>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-map-marker-alt text-red-500 mr-2"></i>
-              <span class="text-gray-400">СПб, ул. Лиговский проспект, 30</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-clock text-red-500 mr-2"></i>
-              <span class="text-gray-400">Круглосуточно</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-gray-500 text-sm mb-4 md:mb-0">
+<div class="flex space-x-4">
+<a class="text-gray-400 hover:text-white text-xl" href="#">
+<i class="fab fa-vk"></i>
+</a>
+<a class="text-gray-400 hover:text-white text-xl" href="#">
+<i class="fab fa-telegram"></i>
+</a>
+<a class="text-gray-400 hover:text-white text-xl" href="#">
+<i class="fab fa-whatsapp"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Услуги</h4>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-white" href="#">Вскрытие дверей</a></li>
+<li><a class="text-gray-400 hover:text-white" href="#">Замена замков</a></li>
+<li><a class="text-gray-400 hover:text-white" href="#">Ремонт замков</a></li>
+<li><a class="text-gray-400 hover:text-white" href="#">Авто замки</a></li>
+<li><a class="text-gray-400 hover:text-white" href="#">Сейфы и шкафы</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Компания</h4>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-white" href="#">О нас</a></li>
+<li><a class="text-gray-400 hover:text-white" href="#">Отзывы</a></li>
+<li><a class="text-gray-400 hover:text-white" href="#">Цены</a></li>
+<li><a class="text-gray-400 hover:text-white" href="#">Контакты</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Контакты</h4>
+<ul class="space-y-2">
+<li class="flex items-center">
+<i class="fas fa-phone-alt text-red-500 mr-2"></i>
+<a class="text-gray-400 hover:text-white" href="tel:+78005553535">8 (800) 555-35-35</a>
+</li>
+<li class="flex items-center">
+<i class="fas fa-envelope text-red-500 mr-2"></i>
+<a class="text-gray-400 hover:text-white" href="mailto:unlockthelock74@gmail.com">unlockthelock74@gmail.com</a>
+</li>
+<li class="flex items-center">
+<i class="fas fa-map-marker-alt text-red-500 mr-2"></i>
+<span class="text-gray-400">СПб, ул. Лиговский проспект, 30</span>
+</li>
+<li class="flex items-center">
+<i class="fas fa-clock text-red-500 mr-2"></i>
+<span class="text-gray-400">Круглосуточно</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-500 text-sm mb-4 md:mb-0">
           © 2023 ЗамОК. Все права защищены.
         </p>
-        <div class="flex space-x-6">
-          <a href="#" class="text-gray-500 hover:text-white text-sm">Политика конфиденциальности</a>
-          <a href="#" class="text-gray-500 hover:text-white text-sm">Пользовательское соглашение</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
- 
-  <div class="fixed bottom-6 right-6 z-50">
-    <a href="tel:+78005553535" class="bg-red-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-red-700 transition animate-bounce">
-      <i class="fas fa-phone-alt text-2xl"></i>
-    </a>
-  </div>
-
-  <script>
-    
+<div class="flex space-x-6">
+<a class="text-gray-500 hover:text-white text-sm" href="#">Политика конфиденциальности</a>
+<a class="text-gray-500 hover:text-white text-sm" href="#">Пользовательское соглашение</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Floating Call Button -->
+<div class="fixed bottom-6 right-6 z-50">
+<a class="bg-red-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-red-700 transition animate-bounce" href="tel:+78005553535">
+<i class="fas fa-phone-alt text-2xl"></i>
+</a>
+</div>
+<script>
+    // Initialize AOS animations
     AOS.init({
       duration: 800,
       once: true,
       easing: 'ease-in-out'
     });
 
-    
+    // Telegram бот
     const TOKEN = '7902468673:AAFGKK3G1pM-Rz0CFAATNxrCaY41LwChWIM';
     const CHAT_ID = '894007967';
 
-    
+    // Функция для отправки в Telegram
     async function sendToTelegram(formData, formType = 'callback') {
       let text = '';
       
@@ -780,13 +747,13 @@
       }
     }
 
-   
+    // Обработка формы обратного звонка
     document.getElementById('callback-form').addEventListener('submit', async function(e) {
       e.preventDefault();
       const form = e.target;
       const status = document.getElementById('callback-status');
       
-      
+      // Проверка honeypot
       if (form.honey.value) {
         return;
       }
@@ -796,20 +763,20 @@
         phone: form.phone.value.trim()
       };
 
-      
+      // Валидация
       if (!formData.name || !formData.phone) {
         status.textContent = '❌ Пожалуйста, заполните все поля';
         status.className = 'form-status error';
         return;
       }
 
-      
+      // Показываем загрузку
       const submitBtn = form.querySelector('button[type="submit"]');
       const originalBtnText = submitBtn.innerHTML;
       submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Отправка...';
       submitBtn.disabled = true;
 
-      
+      // Отправка в Telegram
       const isSent = await sendToTelegram(formData, 'callback');
 
       if (isSent) {
@@ -821,11 +788,11 @@
         status.className = 'form-status error';
       }
 
-      
+      // Восстанавливаем кнопку
       submitBtn.innerHTML = originalBtnText;
       submitBtn.disabled = false;
 
-      
+      // Скрываем статус через 5 секунд
       setTimeout(() => {
         status.style.opacity = '1';
         let opacity = 1;
@@ -841,13 +808,13 @@
       }, 5000);
     });
 
-    
+    // Обработка контактной формы
     document.getElementById('contact-form').addEventListener('submit', async function(e) {
       e.preventDefault();
       const form = e.target;
       const status = document.getElementById('contact-status');
       
-     
+      // Проверка honeypot
       if (form.honey.value) {
         return;
       }
@@ -858,20 +825,20 @@
         message: form.message.value.trim()
       };
 
-     
+      // Валидация
       if (!formData.name || !formData.phone || !formData.message) {
         status.textContent = '❌ Пожалуйста, заполните все поля';
         status.className = 'form-status error';
         return;
       }
 
-      
+      // Показываем загрузку
       const submitBtn = form.querySelector('button[type="submit"]');
       const originalBtnText = submitBtn.innerHTML;
       submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Отправка...';
       submitBtn.disabled = true;
 
-      
+      // Отправка в Telegram
       const isSent = await sendToTelegram(formData, 'contact');
 
       if (isSent) {
@@ -883,11 +850,11 @@
         status.className = 'form-status error';
       }
 
-     
+      // Восстанавливаем кнопку
       submitBtn.innerHTML = originalBtnText;
       submitBtn.disabled = false;
 
-      
+      // Скрываем статус через 5 секунд
       setTimeout(() => {
         status.style.opacity = '1';
         let opacity = 1;
@@ -903,7 +870,7 @@
       }, 5000);
     });
 
-   
+    // FAQ toggle functionality
     document.querySelectorAll('.faq-toggle').forEach(button => {
       button.addEventListener('click', () => {
         const content = button.nextElementSibling;
@@ -915,7 +882,5 @@
       });
     });
   </script>
-   <script>
-
 </body>
 </html>
