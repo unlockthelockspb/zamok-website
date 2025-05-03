@@ -915,5 +915,15 @@
       });
     });
   </script>
+   <script>
+    // Фикс для iOS - предотвращаем появление белых полей
+    document.addEventListener('touchmove', function(e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+    document.body.addEventListener('touchstart', function() {}, false);
+  </script>
 </body>
 </html>
