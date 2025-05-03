@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -106,6 +105,23 @@
       backdrop-filter: blur(10px);
       background-color: rgba(26, 32, 44, 0.95);
     }
+    
+    .form-status {
+      padding: 8px;
+      border-radius: 4px;
+      margin-top: 10px;
+      display: none;
+    }
+    .form-status.success {
+      background-color: #d4edda;
+      color: #155724;
+      display: block;
+    }
+    .form-status.error {
+      background-color: #f8d7da;
+      color: #721c24;
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -130,7 +146,7 @@
       <div class="flex items-center space-x-4">
         <div class="hidden md:block text-right">
           <p class="text-white font-medium">Круглосуточно</p>
-          <a href="tel:+79817255837" class="text-xl font-bold text-red-400 hover:text-red-300">8 (981) 725-58-37</a>
+          <a href="tel:+88005553535" class="text-xl font-bold text-red-400 hover:text-red-300">8 (800) 555-35-35</a>
         </div>
         <a href="#callback" class="btn-primary text-white px-6 py-3 rounded-lg font-semibold">
           <i class="fas fa-phone-alt mr-2"></i>Вызвать мастера
@@ -140,7 +156,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+  <section class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('locksmith-bg.jpg')">
     <div class="absolute inset-0 hero-gradient"></div>
     <div class="container mx-auto px-4 relative z-10">
       <div class="max-w-2xl">
@@ -166,7 +182,7 @@
             <button type="submit" class="btn-primary w-full text-white py-3 rounded-lg font-semibold">
               <i class="fas fa-paper-plane mr-2"></i>Вызвать мастера
             </button>
-            <p class="text-sm text-gray-500">Мы перезвоним вам в течение 5 минут</p>
+            <div id="callback-status" class="form-status"></div>
           </form>
         </div>
       </div>
@@ -398,7 +414,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <div class="text-gray-500 text-sm">12.05.2023</div>
+            <div class="text-gray-500 text-sm">12.05.2025</div>
           </div>
           <p class="text-gray-700 mb-4">
             "Очень быстро приехал мастер, открыл дверь без повреждений за 10 минут. 
@@ -424,7 +440,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <div class="text-gray-500 text-sm">28.04.2023</div>
+            <div class="text-gray-500 text-sm">28.04.2025</div>
           </div>
           <p class="text-gray-700 mb-4">
             "Забыл ключи в квартире поздно вечером. Позвонил, мастер приехал через 20 минут. 
@@ -450,7 +466,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <div class="text-gray-500 text-sm">15.04.2023</div>
+            <div class="text-gray-500 text-sm">15.04.2025</div>
           </div>
           <p class="text-gray-700 mb-4">
             "Сломался замок в офисе, срочно нужно было открыть. Ребята оперативно приехали, 
@@ -558,7 +574,7 @@
               </div>
               <div>
                 <h4 class="font-bold text-lg mb-1">Телефон</h4>
-                <a href="tel:+79817255837" class="text-gray-300 hover:text-white">8 (981) 725-58-37</a>
+                <a href="tel:+79817255837" class="text-gray-300 hover:text-white">8 (800) 555-35-35</a></a>
                 <p class="text-sm text-gray-400">Круглосуточно, без выходных</p>
               </div>
             </div>
@@ -579,7 +595,7 @@
               </div>
               <div>
                 <h4 class="font-bold text-lg mb-1">Адрес офиса</h4>
-                <p class="text-gray-300">г. Санкт-Петербург, ул. Ярослава Гашека, д. 26, корпус 1</p>
+                <p class="text-gray-300">г. Санкт-Петербург, ул. Лиговский проспект, 30</p>
                 <p class="text-sm text-gray-400">По предварительной записи</p>
               </div>
             </div>
@@ -615,6 +631,7 @@
             <button type="submit" class="btn-primary w-full text-white py-3 rounded-lg font-semibold">
               <i class="fas fa-paper-plane mr-2"></i>Отправить сообщение
             </button>
+            <div id="contact-status" class="form-status"></div>
           </form>
         </div>
       </div>
@@ -664,7 +681,6 @@
             <li><a href="#" class="text-gray-400 hover:text-white">Отзывы</a></li>
             <li><a href="#" class="text-gray-400 hover:text-white">Цены</a></li>
             <li><a href="#" class="text-gray-400 hover:text-white">Контакты</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-white">Вакансии</a></li>
           </ul>
         </div>
         
@@ -673,7 +689,7 @@
           <ul class="space-y-2">
             <li class="flex items-center">
               <i class="fas fa-phone-alt text-red-500 mr-2"></i>
-              <a href="tel:+79817255837" class="text-gray-400 hover:text-white">8 (981) 725-58-37</a>
+              <a href="tel:+79817255837" class="text-gray-400 hover:text-white">8 (800) 555-35-35</a>
             </li>
             <li class="flex items-center">
               <i class="fas fa-envelope text-red-500 mr-2"></i>
@@ -681,7 +697,7 @@
             </li>
             <li class="flex items-center">
               <i class="fas fa-map-marker-alt text-red-500 mr-2"></i>
-              <span class="text-gray-400">СПб, ул. Ярослава Гашека, 26</span>
+              <span class="text-gray-400">СПб, ул. Лиговский проспект, 30</span>
             </li>
             <li class="flex items-center">
               <i class="fas fa-clock text-red-500 mr-2"></i>
@@ -718,6 +734,176 @@
       easing: 'ease-in-out'
     });
 
+    // Telegram бот
+    const TOKEN = '7902468673:AAFGKK3G1pM-Rz0CFAATNxrCaY41LwChWIM';
+    const CHAT_ID = '894007967';
+
+    // Функция для отправки в Telegram
+    async function sendToTelegram(formData, formType = 'callback') {
+      let text = '';
+      
+      if (formType === 'callback') {
+        text = `
+          🔐 <b>Новая заявка с сайта (Обратный звонок)</b>
+          👤 <b>Имя:</b> ${formData.name}
+          📞 <b>Телефон:</b> ${formData.phone}
+          🕒 <b>Время:</b> ${new Date().toLocaleString()}
+        `;
+      } else if (formType === 'contact') {
+        text = `
+          ✉️ <b>Новое сообщение с сайта</b>
+          👤 <b>Имя:</b> ${formData.name}
+          📞 <b>Телефон:</b> ${formData.phone}
+          📝 <b>Сообщение:</b> ${formData.message}
+          🕒 <b>Время:</b> ${new Date().toLocaleString()}
+        `;
+      }
+
+      try {
+        const res = await fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            chat_id: CHAT_ID,
+            text: text,
+            parse_mode: 'HTML',
+          })
+        });
+
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+
+        return true;
+      } catch (error) {
+        console.error('Ошибка при отправке в Telegram:', error);
+        return false;
+      }
+    }
+
+    // Обработка формы обратного звонка
+    document.getElementById('callback-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const status = document.getElementById('callback-status');
+      
+      // Проверка honeypot
+      if (form.honey.value) {
+        return;
+      }
+
+      const formData = {
+        name: form.name.value.trim(),
+        phone: form.phone.value.trim()
+      };
+
+      // Валидация
+      if (!formData.name || !formData.phone) {
+        status.textContent = '❌ Пожалуйста, заполните все поля';
+        status.className = 'form-status error';
+        return;
+      }
+
+      // Показываем загрузку
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerHTML;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Отправка...';
+      submitBtn.disabled = true;
+
+      // Отправка в Telegram
+      const isSent = await sendToTelegram(formData, 'callback');
+
+      if (isSent) {
+        status.textContent = '✅ Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.';
+        status.className = 'form-status success';
+        form.reset();
+      } else {
+        status.textContent = '❌ Ошибка при отправке. Пожалуйста, попробуйте позже или позвоните нам.';
+        status.className = 'form-status error';
+      }
+
+      // Восстанавливаем кнопку
+      submitBtn.innerHTML = originalBtnText;
+      submitBtn.disabled = false;
+
+      // Скрываем статус через 5 секунд
+      setTimeout(() => {
+        status.style.opacity = '1';
+        let opacity = 1;
+        const fadeOut = setInterval(() => {
+          opacity -= 0.1;
+          status.style.opacity = opacity;
+          if (opacity <= 0) {
+            clearInterval(fadeOut);
+            status.className = 'form-status';
+            status.style.opacity = '';
+          }
+        }, 300);
+      }, 5000);
+    });
+
+    // Обработка контактной формы
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const status = document.getElementById('contact-status');
+      
+      // Проверка honeypot
+      if (form.honey.value) {
+        return;
+      }
+
+      const formData = {
+        name: form.name.value.trim(),
+        phone: form.phone.value.trim(),
+        message: form.message.value.trim()
+      };
+
+      // Валидация
+      if (!formData.name || !formData.phone || !formData.message) {
+        status.textContent = '❌ Пожалуйста, заполните все поля';
+        status.className = 'form-status error';
+        return;
+      }
+
+      // Показываем загрузку
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerHTML;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Отправка...';
+      submitBtn.disabled = true;
+
+      // Отправка в Telegram
+      const isSent = await sendToTelegram(formData, 'contact');
+
+      if (isSent) {
+        status.textContent = '✅ Сообщение успешно отправлено! Мы ответим вам в ближайшее время.';
+        status.className = 'form-status success';
+        form.reset();
+      } else {
+        status.textContent = '❌ Ошибка при отправке. Пожалуйста, попробуйте позже или позвоните нам.';
+        status.className = 'form-status error';
+      }
+
+      // Восстанавливаем кнопку
+      submitBtn.innerHTML = originalBtnText;
+      submitBtn.disabled = false;
+
+      // Скрываем статус через 5 секунд
+      setTimeout(() => {
+        status.style.opacity = '1';
+        let opacity = 1;
+        const fadeOut = setInterval(() => {
+          opacity -= 0.1;
+          status.style.opacity = opacity;
+          if (opacity <= 0) {
+            clearInterval(fadeOut);
+            status.className = 'form-status';
+            status.style.opacity = '';
+          }
+        }, 300);
+      }, 5000);
+    });
+
     // FAQ toggle functionality
     document.querySelectorAll('.faq-toggle').forEach(button => {
       button.addEventListener('click', () => {
@@ -728,79 +914,6 @@
         icon.classList.toggle('transform');
         icon.classList.toggle('rotate-180');
       });
-    });
-
-    // Form submission for callback form
-    document.getElementById('callback-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const form = e.target;
-      const honey = form.honey.value;
-      
-      if (honey) return; // Honeypot check
-      
-      const formData = {
-        name: form.name.value,
-        phone: form.phone.value
-      };
-      
-      // Here you would typically send the data to your server or Telegram
-      console.log('Form submitted:', formData);
-      
-      // Show success message
-      alert('Спасибо! Мы перезвоним вам в течение 5 минут.');
-      form.reset();
-    });
-
-    // Form submission for contact form
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const form = e.target;
-      const honey = form.honey.value;
-      
-      if (honey) return; // Honeypot check
-      
-      const formData = {
-        name: form.name.value,
-        phone: form.phone.value,
-        message: form.message.value
-      };
-      
-      // Here you would typically send the data to your server or Telegram
-      console.log('Contact form submitted:', formData);
-      
-      // Show success message
-      alert('Спасибо за ваш вопрос! Мы ответим вам в ближайшее время.');
-      form.reset();
-    });
-
-    // Telegram form submission (original functionality)
-    document.getElementById("tg-form").addEventListener("submit", function (e) {
-      e.preventDefault();
-      const form = e.target;
-      const honey = form.honey.value;
-      if (honey) return;
-
-      const data = {
-        name: form.name.value,
-        phone: form.phone.value,
-      };
-
-      const token = "7902468673:AAFGKK3G1pM-Rz0CFAATNxrCaY41LwChWIM";
-      const chat_id = "894007967";
-      const text = `🔐 Новая заявка:\n👤 Имя: ${data.name}\n📞 Телефон: ${data.phone}`;
-
-      fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ chat_id, text })
-      })
-        .then(() => {
-          document.getElementById("form-status").textContent = "✅ Заявка отправлена!";
-          form.reset();
-        })
-        .catch(() => {
-          document.getElementById("form-status").textContent = "❌ Ошибка отправки.";
-        });
     });
   </script>
 </body>
