@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 <head>
 <meta charset="utf-8"/>
@@ -123,46 +122,86 @@
       color: #721c24;
       display: block;
     }
-  </style>
-<style>
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
-}
-* {
-    box-sizing: border-box;
-}
-</style></head>
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Новые стили для исправления проблемы с кнопкой */
+    @media (max-width: 768px) {
+        .header-container {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .logo-phone-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .call-button-mobile {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .call-button-mobile a {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        .desktop-phone {
+            display: none;
+        }
+    }
+    @media (min-width: 769px) {
+        .call-button-mobile {
+            display: none;
+        }
+    }
+</style>
+</head>
 <body>
 <!-- Header -->
 <header class="sticky-nav py-4 shadow-md sticky top-0 z-50">
-<div class="container mx-auto px-4 flex justify-between items-center">
-<div class="flex items-center space-x-3">
-<img alt="КликЗамок" class="w-10 h-10" src="https://cdn-icons-png.flaticon.com/512/565/565547.png"/>
-<div>
-<h1 class="text-2xl font-bold text-white">Клик<span class="text-red-500">Замок</span></h1>
-<p class="text-xs text-gray-300">Вскрытие замков в СПБ</p>
-</div>
-</div>
-<div class="hidden md:flex items-center space-x-8">
-<a class="nav-link text-white hover:text-red-400" href="#services">Услуги</a>
-<a class="nav-link text-white hover:text-red-400" href="#advantages">Преимущества</a>
-<a class="nav-link text-white hover:text-red-400" href="#reviews">Отзывы</a>
-<a class="nav-link text-white hover:text-red-400" href="#contacts">Контакты</a>
-</div>
-<div class="flex items-center space-x-4">
-<div class="hidden md:block text-right">
-<p class="text-white font-medium">Круглосуточно</p>
-<a class="text-xl font-bold text-red-400 hover:text-red-300" href="tel:+79812177032">+7 (981) 217-70-32</a>
-</div>
-<a class="btn-primary text-white px-6 py-3 rounded-lg font-semibold" href="tel:+79812177032" style="; text-decoration: none;">
-<i class="fas fa-phone-alt mr-2"></i>Вызвать мастера
-        </a>
-</div>
-</div>
+    <div class="container mx-auto px-4">
+        <div class="header-container flex justify-between items-center">
+            <div class="logo-phone-container flex items-center space-x-3">
+                <div class="flex items-center space-x-3">
+                    <img alt="КликЗамок" class="w-10 h-10" src="https://cdn-icons-png.flaticon.com/512/565/565547.png"/>
+                    <div>
+                        <h1 class="text-2xl font-bold text-white">Клик<span class="text-red-500">Замок</span></h1>
+                        <p class="text-xs text-gray-300">Вскрытие замков в СПБ</p>
+                    </div>
+                </div>
+                <div class="desktop-phone hidden md:block text-right ml-8">
+                    <p class="text-white font-medium">Круглосуточно</p>
+                    <a class="text-xl font-bold text-red-400 hover:text-red-300" href="tel:+79812177032">+7 (981) 217-70-32</a>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a class="nav-link text-white hover:text-red-400" href="#services">Услуги</a>
+                <a class="nav-link text-white hover:text-red-400" href="#advantages">Преимущества</a>
+                <a class="nav-link text-white hover:text-red-400" href="#reviews">Отзывы</a>
+                <a class="nav-link text-white hover:text-red-400" href="#contacts">Контакты</a>
+            </div>
+            <div class="hidden md:block">
+                <a class="btn-primary text-white px-6 py-3 rounded-lg font-semibold whitespace-nowrap" href="tel:+79812177032" style="text-decoration: none;">
+                    <i class="fas fa-phone-alt mr-2"></i>Вызвать мастера
+                </a>
+            </div>
+            <div class="call-button-mobile">
+                <a class="btn-primary text-white px-6 py-3 rounded-lg font-semibold whitespace-nowrap" href="tel:+79812177032" style="text-decoration: none;">
+                    <i class="fas fa-phone-alt mr-2"></i>Вызвать мастера
+                </a>
+            </div>
+        </div>
+    </div>
 </header>
 <!-- Hero Section -->
 <section class="relative py-20 md:py-32 bg-cover bg-center" style="background-image: url('locksmith-bg.jpg')">
